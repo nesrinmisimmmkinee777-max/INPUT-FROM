@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1671e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 14%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .todolist {
+            min-height: 300px;
+            background-color: aliceblue;
+            padding: 40px;
+            border-radius: 20px;
+            width: 40%;
+            
+        }
+
+        input {
+            padding: 10px;
+            width: 280px;
+        }
+
+        button {
+            background-color: #1671e7;
+            border-radius: 10px;
+            padding: 10px;
+            border: solid #1671e7;
+            color: aliceblue;
+            width: 60px;
+        }
+
+        .fa-solid {
+            background-color: blue;
+            border-radius: 10px;
+            padding: 20px;
+            width: 60px;
+            height: 10px;
+            margin-left: 300px;
+            color: white;
+           transform: translateY(-37px);
+           
+        }
+
+
+       li{
+          background-color: #1671e741;
+            border-radius: 10px;
+            padding: 20px;
+            opacity: 0;
+            width:360px;
+            height: 10px;
+            margin-top: 10px;
+            
+       }
+   
+      .hidden{
+        visibility: hidden;
+      }
+       
+    </style>
+
+
+
+
+    <div class="todolist">
+        <div class="div2">
+<form>
+  <input type="text" class="task " placeholder="Write your task...">
+
+  <span class="erorr hidden">Inputun bos ola bilmez!</span>
+</form>
+<button class="add">add</button>
+
+
+    
+        <ul>
+            <li class="li">
+                <span class="span11"></span>
+                
+            </li>
+        </ul>
+        </div>
+    </div>
+
+  
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</body>
+
+</html>
