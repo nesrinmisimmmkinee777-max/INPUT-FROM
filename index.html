@@ -25,20 +25,24 @@
 
         ul {
             list-style-type: none;
+            position: absolute;
+           transform: translateX(-50px);
         }
 
         .todolist {
-            min-height: 300px;
+            min-height: 400px;
             background-color: aliceblue;
             padding: 40px;
             border-radius: 20px;
             width: 40%;
-            
+            position: relative;
+
         }
 
         input {
             padding: 10px;
-            width: 280px;
+            width: 380px;
+            height: 40px;
         }
 
         button {
@@ -47,7 +51,8 @@
             padding: 10px;
             border: solid #1671e7;
             color: aliceblue;
-            width: 60px;
+            width: 140px;
+            height: 40px;
         }
 
         .fa-solid {
@@ -58,52 +63,79 @@
             height: 10px;
             margin-left: 300px;
             color: white;
-           transform: translateY(-37px);
-           
+            transform: translateY(-37px);
+
         }
 
 
-       li{
-          background-color: #1671e741;
+        li {
+            background-color: #1671e741;
             border-radius: 10px;
             padding: 20px;
             opacity: 0;
-            width:360px;
+            width: 360px;
             height: 10px;
             margin-top: 10px;
-            
-       }
-   
-      .hidden{
-        visibility: hidden;
-      }
-       
+           
+
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .erorr {
+            background-color: red;
+            color: aliceblue;
+            border: solid red;
+            border-radius: 10px;
+            padding: 5px;
+            width: 200px;
+            position: absolute;
+            margin-left: 1060px;
+             transform: translateY(-290px);
+
+        }
+
+        form {
+            display: flex;
+gap: 10px;
+position: relative;        
+}
+
+        
     </style>
 
 
 
 
+                    
+                
+            </form>
     <div class="todolist">
         <div class="div2">
-<form>
-  <input type="text" class="task " placeholder="Write your task...">
+            <form>
+                <input name="text" type="text" class="task" placeholder="Write your task..." />
+                <button type="submit" class="add">add</button>
 
-  <span class="erorr hidden">Inputun bos ola bilmez!</span>
-</form>
-<button class="add">add</button>
-
-
-    
-        <ul>
-            <li class="li">
-                <span class="span11"></span>
                 
-            </li>
-        </ul>
+
+
+
+
+
+            
         </div>
     </div>
+    <ul>
+                <li class="li">
+                    <span class="span11"></span>
 
-  
+                </li>
+            </ul>
+
+<span class="erorr hidden">Input bos ola bilmez!</span>
+
 
 
 
